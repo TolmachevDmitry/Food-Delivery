@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" >
+
+    </head>
+
+    <body>
+
+        <form>
+
+            <div class="parameter" > 
+                <label>Имя</label>
+                <input required type="text" name="name" />
+            </div>
+
+            <div class="parameter" >
+                <label>Фамилия</label>
+                <input required type="text" name="surname" />
+            </div>
+
+            <div class="parameter" >
+                <label>Город</label>
+                <input required type="text" name="city" />
+            </div>
+
+            <div class="parameter" >
+                <label>Дата рождения</label>
+                <input required type="date" name="birthday" />
+            </div>
+
+            <div class="parameter" >
+                <label>Логин</label>
+                <input required type="text" name="login" />
+            </div>
+    
+            <div class="parameter" >
+                <label>Пароль</label>
+                <input required type="text" name="password" />
+            </div>
+
+            <div class="error" >
+                <% 
+                    String error = request.getAttribute("error");
+                    if (error != null) {
+                        <p>error</p>
+                    }
+                 %>
+            </div>
+
+            <input type="sumbit" value="Войти" />
+        </form>
+
+    </body>
+</html>

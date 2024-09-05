@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<web-app xmlns="https://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schenalLocation="http://xmlns.jcp.org/xml/ns/javaee webapp_4_0.xsd"
+         version="4.0">
+
+    <!-- old method to tomcat-server running -->
+
+    <servlet>
+        <servlet-name>servlet-start</servlet-name>
+        <servlet-class>com.tolmic.fooddeliveryservlet.servlets.StartServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet-start</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>servlet-dish</servlet-name>
+        <servlet-class>com.tolmic.fooddeliveryservlet.servlets.DishServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet-dish</servlet-name>
+        <url-pattern>/dish</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- <servlet>
+        <servlet-name>jsp-servlet</servlet-name>
+        <servlet-class>org.apache.jasper.servlet.JspServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>jsp-servlet</servlet-name>
+        <url-pattern>.jsp</url-pattern>
+    </servlet-mapping> -->
+
+    <!-- <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping> -->
+
+</web-app>
